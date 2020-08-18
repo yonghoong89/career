@@ -36,13 +36,36 @@ xmp{line-height:0}
 		url(../fonts/NotoSansKR-Bold-Hestia.otf) format('opentype'); 
 } 
 .blind{overflow:hidden;position:absolute;top:-999px;left:-999px;width:0;height:0;font-size:0;line-height:999px;white-space:nowrap}
-.wrap{padding-bottom:100px;font-family:'Noto Sans Korean',Dotum,"돋움", Tahoma, sans-serif;font-weight:400}
+.wrap{max-width:1200px;margin:0 auto;padding:100px 0;font-family:'Noto Sans Korean',Dotum,"돋움", Tahoma, sans-serif;font-weight:400}
+body{background-color:#fbfbfd}
 /*header*/
-.header{position:relative;padding:0 20px;max-width:980px;margin:0 auto;text-align:center}
-.header .tit{padding:25px 0;font-size:32px;font-weight:800;color:#484848}
-.btn_prev{position:absolute;top:10px;right:10px;width:50px;height:50px;background:red;}
-/*container*/
-/*common index*/
+.section__container{}
+.section__header{}
+.section__header .text__title{font-size:24px;color:#333}
+.section__header .text__title-information{font-size: 16px;color:#333}
+
+.section__content{margin-top:20px}
+.box__navigation{height:40px;background:rgba(0,0,0,0.8);text-align:center;line-height:40px;}
+.box__navigation .text__section-title{font-size:14px;font-weight:normal;color:#fbfbfd}
+
+.box__content{padding:20px;border-top:1px solid #ccc;}
+.box__content .text__content-title{font-size:16px}
+.box__content .list__information{padding-top:10px}
+.box__content .list__information .list-item{position:relative;padding-left:10px;margin-top:5px;font-size:14px}
+.box__content .list__information .list-item:before{content:'';position:absolute;top:50%;left:0;width:2px;height:2px;border-radius:50%;transform:translateY(50%);background-color:#999}
+
+
+.box__content .box__project{position:relative}
+.box__content .box__project + .box__project{margin-top:25px}
+.box__content .box__project:before{content: '';position:absolute;top:12px;left:-22px;width:5px;height:5px;border-radius:50%;background-color:#ccc}
+
+.box__content .box__project-list{position:relative;padding-left:25px;margin-top:15px}
+.box__content .box__project-title{position:relative}
+.box__content .box__project-list .text__project-name{padding-top:35px;font-size:16px;color:#157be1}
+.box__content .box__project-list .text__project-date{position:absolute;top:0;left:0;height:28px;line-height:28px;padding:0 20px;border-radius:28px;background-color:#2997ff;color:#fff}
+.box__content .box__project-list:before{content: '';position:absolute;top:15px;left:5px;width:1px;height:100%;background-color:#ccc;}
+
+.box__content .text__addtional{margin-top:10px;font-size:14px;color:#727272}
 
 /*footer*/
 .footer{position:fixed;bottom:0;left:0;width:100%;background:#f8f8f8;text-align:center}
